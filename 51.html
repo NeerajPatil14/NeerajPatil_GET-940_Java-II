@@ -1,0 +1,33 @@
+<h3> 51. What is the <u>output</u> of the below <i>code</i>?</h3>
+<pre>
+
+import java.io.IOException;
+public class practice3 { 
+	 public static void main(String[] args) {
+	  B b=new B();
+	  try {
+	   b.method();
+	  } catch (Exception e) {
+	   e.printStackTrace();
+	  }
+	 }
+	}
+	class A{
+		private void method() throws Exception
+	 {
+	 System.out.println("hello");
+	 }
+	}
+	class B extends A{
+	 public void method() throws Exception
+	 {
+		 System.out.println("hello A");
+	 }
+}
+
+</ pre>
+<p> 1. hello A</p> 
+<p> 2. hello  </p> 
+<p> 3. will not compile </p> 
+<p> 4. None of the above </p> 
+<hr>
